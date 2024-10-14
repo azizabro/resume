@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aziz Ahmad Abro - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 26px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin-bottom: 8px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 15px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Aziz Ahmad Abro</h1>
+        <div class="contact-info">
+            <p><strong>Phone:</strong> 0430 512 838</p>
+            <p><strong>Email:</strong> abro.aziz@gmail.com</p>
+            <p><strong>Location:</strong> Perth, WA</p>
+        </div>
+
+        <div class="section">
+            <h2>Professional Experience</h2>
+            <h3>Force-V — Electrical Engineer (2022 – 23)</h3>
+            <ul>
+                <li>Designed and implemented home automation systems.</li>
+                <li>Led a team to integrate new modifications with existing home systems, ensuring compatibility and optimizing performance.</li>
+                <li>Completed the project ahead of schedule, resulting in a 20% increase in customer satisfaction and a 15% rise in sales.</li>
+                <li>Spearheaded the design and implementation of solar power systems and electric vehicle charging stations.</li>
+                <li>Conducted site assessments, designed electrical schematics, and managed the installation process.</li>
+                <li>Received commendations from clients for sustainability efforts.</li>
+            </ul>
+
+            <h3>RNS Solutions — Technical Writer (2021 – 22)</h3>
+            <ul>
+                <li>Conducted research and translated findings into accessible language for various stakeholders.</li>
+                <li>Worked closely with engineers and project managers to gather information, creating detailed reports and user manuals.</li>
+                <li>Enhanced the quality of technical documentation, leading to a 25% reduction in customer support queries.</li>
+                <li>Assisted in preparing project proposals and feasibility studies.</li>
+                <li>Successfully contributed to winning 3 new contracts, boosting the company’s revenue and market presence.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <h3>Professional Certificate of Competency in Programmable Logic Controllers (PLCs) & SCADA Systems (2024 – 25)</h3>
+            <p>Engineering Institute of Technology</p>
+            <ul>
+                <li>Course covering SCADA and PLC systems with case studies in the water, electrical, and processing industries.</li>
+            </ul>
+
+            <h3>Bachelor of Electrical Engineering (B.E.) (2016 – 20)</h3>
+            <p>National University of Sciences & Technology</p>
+            <ul>
+                <li>Relevant Coursework: Power Systems Design, Power Electronics, Industrial Process Control, etc.</li>
+                <li>Projects: Line Follower Robot, Vehicle Traction Control using Arduino, Artificial Pancreas using non-linear Control.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
