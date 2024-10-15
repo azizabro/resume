@@ -5,154 +5,319 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aziz Ahmad Abro - Resume</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            padding: 20px;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        h1, h2, h3 {
-            color: #007BFF;
-            margin-bottom: 15px;
-        }
-        h1 {
-            font-size: 28px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        h2 {
-            font-size: 22px;
-            margin-top: 40px;
-            border-bottom: 2px solid #007BFF;
-            padding-bottom: 5px;
-        }
-        h3 {
-            font-size: 18px;
-            margin-top: 20px;
-        }
-        .contact-info {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .contact-info p {
-            margin-bottom: 10px;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 20px;
-        }
-        ul li {
-            margin-bottom: 10px;
-            position: relative;
-            padding-left: 20px;
-        }
-        ul li::before {
-            content: '★';
-            color: #007BFF;
-            position: absolute;
-            left: 0;
-            top: 0;
-            font-size: 18px;
-        }
-        /* Responsiveness */
-        @media (max-width: 768px) {
-            .container {
-                padding: 15px;
-            }
-            h1 {
-                font-size: 24px;
-            }
-            h2 {
-                font-size: 20px;
-            }
-            h3 {
-                font-size: 16px;
-            }
-        }
-        @media (max-width: 480px) {
-            body {
-                padding: 10px;
-            }
-            .container {
-                padding: 10px;
-            }
-            h1 {
-                font-size: 22px;
-            }
-            h2 {
-                font-size: 18px;
-            }
-            h3 {
-                font-size: 16px;
-            }
-        }
+       * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;  
+}
+
+body {
+  min-height: 100%;  
+  background: #eee;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #222;
+  font-size: 14px;
+  line-height: 26px;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 700px;   
+  background: #fff;
+  margin: 0px auto 0px; 
+  box-shadow: 1px 1px 2px #DAD7D7;
+  border-radius: 3px;  
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.header {
+  margin-bottom: 30px;
+  
+  .full-name {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  
+  .first-name {
+    font-weight: 700;
+  }
+  
+  .last-name {
+    font-weight: 300;
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+  }
+  
+  .email ,
+  .phone {
+    color: #999;
+    font-weight: 300;
+  } 
+  
+  .separator {
+    height: 10px;
+    display: inline-block;
+    border-left: 2px solid #999;
+    margin: 0px 10px;
+  }
+  
+  .position {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: underline;
+  }
+}
+
+
+.details {
+  line-height: 20px;
+  
+  .section {
+    margin-bottom: 40px;  
+  }
+  
+  .section:last-of-type {
+    margin-bottom: 0px;  
+  }
+  
+  .section__title {
+    letter-spacing: 2px;
+    color: #54AFE4;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .section__list-item {
+    margin-bottom: 40px;
+  }
+  
+  .section__list-item:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  .left ,
+  .right {
+    vertical-align: top;
+    display: inline-block;
+  }
+  
+  .left {
+    width: 60%;    
+  }
+  
+  .right {
+    tex-align: right;
+    width: 39%;    
+  }
+  
+  .name {
+    font-weight: bold;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+    font-style: italic;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #000;
+  }
+  
+  .skills {
+    
+  }
+    
+  .skills__item {
+    margin-bottom: 10px;  
+  }
+  
+  .skills__item .right {
+    input {
+      display: none;
+    }
+    
+    label {
+      display: inline-block;  
+      width: 20px;
+      height: 20px;
+      background: #C3DEF3;
+      border-radius: 20px;
+      margin-right: 3px;
+    }
+    
+    input:checked + label {
+      background: #79A9CE;
+    }
+  }
+}
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Aziz Ahmad Abro</h1>
-        <div class="contact-info">
-            <p><strong>Phone:</strong> 0430 512 838</p>
-            <p><strong>Email:</strong> abro.aziz@gmail.com</p>
-            <p><strong>Location:</strong> Perth, WA</p>
-        </div>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 
-        <div class="section">
-            <h2>Professional Experience</h2>
-
-            <h3>Force-V — Electrical Engineer (2022 – 23)</h3>
-            <ul>
-                <li>Designed and implemented home automation systems.</li>
-                <li>Led a team to integrate new modifications with existing home systems, ensuring compatibility and optimizing performance.</li>
-                <li>Completed the project ahead of schedule, resulting in a 20% increase in customer satisfaction and a 15% rise in sales.</li>
-                <li>Spearheaded the design and implementation of solar power systems and electric vehicle charging stations.</li>
-                <li>Conducted site assessments, designed electrical schematics, and managed the installation process.</li>
-                <li>Received commendations from clients for sustainability efforts.</li>
-            </ul>
-
-            <h3>RNS Solutions — Technical Writer (2021 – 22)</h3>
-            <ul>
-                <li>Conducted research and translated findings into accessible language for various stakeholders.</li>
-                <li>Worked closely with engineers and project managers to gather information, creating detailed reports and user manuals.</li>
-                <li>Enhanced the quality of technical documentation, leading to a 25% reduction in customer support queries.</li>
-                <li>Assisted in preparing project proposals and feasibility studies.</li>
-                <li>Successfully contributed to winning 3 new contracts, boosting the company’s revenue and market presence.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Education</h2>
-
-            <h3>Professional Certificate of Competency in Programmable Logic Controllers (PLCs) & SCADA Systems (2024 – 25)</h3>
-            <p>Engineering Institute of Technology</p>
-            <ul>
-                <li>Course covering SCADA and PLC systems with case studies in the water, electrical, and processing industries.</li>
-            </ul>
-
-            <h3>Bachelor of Electrical Engineering (B.E.) (2016 – 20)</h3>
-            <p>National University of Sciences & Technology</p>
-            <ul>
-                <li>Relevant Coursework: Power Systems Design, Power Electronics, Industrial Process Control, etc.</li>
-                <li>Projects: Line Follower Robot, Vehicle Traction Control using Arduino, Artificial Pancreas using non-linear Control.</li>
-            </ul>
-        </div>
+<div class="container">
+  <div class="header">
+    <div class="full-name">
+      <span class="first-name">Aziz</span> 
+      <span class="last-name">Abro</span>
     </div>
+    <div class="contact-info">
+      <span class="email">Email: </span>
+      <span class="email-val">abro.aziz@gmail.com</span>
+      <span class="separator"></span>
+      <span class="phone">Phone: </span>
+      <span class="phone-val">0430-512-838</span>
+    </div>
+    
+    <div class="about">
+      <span class="position">Electrical Engineer</span>
+      <span class="desc">
+        I am an electrical engineer with a focus on home automation, solar power systems, and SCADA. Highly motivated, result-focused, and passionate about sustainability and emerging technologies.
+      </span>
+    </div>
+  </div>
+
+  <div class="details">
+    <div class="section">
+      <div class="section__title">Professional Experience</div>
+      <div class="section__list">
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name">Force-V</div>
+            <div class="addr">Perth, WA</div>
+            <div class="duration">2022 – 2023</div>
+          </div>
+          <div class="right">
+            <div class="name">Electrical Engineer</div>
+            <div class="desc">
+              - Designed and implemented home automation systems.<br>
+              - Led a team to integrate new modifications with existing systems.<br>
+              - Spearheaded solar power system designs and EV charging stations.<br>
+              - Completed projects ahead of schedule, boosting sales by 15%.
+            </div>
+          </div>
+        </div>
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name">RNS Solutions</div>
+            <div class="addr">Remote</div>
+            <div class="duration">2021 – 2022</div>
+          </div>
+          <div class="right">
+            <div class="name">Technical Writer</div>
+            <div class="desc">
+              - Created detailed technical documentation for various stakeholders.<br>
+              - Enhanced documentation quality, reducing customer queries by 25%.<br>
+              - Contributed to successful project proposals, winning 3 new contracts.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section__title">Education</div>
+      <div class="section__list">
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name">Engineering Institute of Technology</div>
+            <div class="addr">Perth, WA</div>
+            <div class="duration">2024 – 2025</div>
+          </div>
+          <div class="right">
+            <div class="name">Certificate in PLCs & SCADA Systems</div>
+            <div class="desc">Studied SCADA and PLC systems with applications in water, electrical, and processing industries.</div>
+          </div>
+        </div>
+
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name">National University of Sciences & Technology</div>
+            <div class="addr">Islamabad, Pakistan</div>
+            <div class="duration">2016 – 2020</div>
+          </div>
+          <div class="right">
+            <div class="name">Bachelor of Electrical Engineering</div>
+            <div class="desc">Completed projects including Line Follower Robot, Vehicle Traction Control using Arduino, and Artificial Pancreas using non-linear control.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section__title">Projects</div>
+      <div class="section__list">
+        <div class="section__list-item">
+          <div class="name">Line Follower Robot</div>
+          <div class="text">
+            Designed and built a robot capable of following a path based on line detection, utilizing sensors and microcontrollers.
+          </div>
+        </div>
+
+        <div class="section__list-item">
+          <div class="name">Solar Power System for Residential Complex</div>
+          <div class="text">
+            Spearheaded the design and installation of a solar power system for a residential complex, enhancing energy efficiency and reducing carbon footprint.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section__title">Skills</div>
+      <div class="skills">
+        <div class="skills__item">
+          <div class="left"><div class="name">SCADA Systems</div></div>
+          <div class="right">
+            <input id="ck1" type="checkbox" checked/>
+            <label for="ck1"></label>
+            <input id="ck2" type="checkbox" checked/>
+            <label for="ck2"></label>
+            <input id="ck3" type="checkbox"/>
+            <label for="ck3"></label>
+            <input id="ck4" type="checkbox"/>
+            <label for="ck4"></label>
+          </div>
+        </div>
+
+        <div class="skills__item">
+          <div class="left"><div class="name">Home Automation</div></div>
+          <div class="right">
+            <input id="ck5" type="checkbox" checked/>
+            <label for="ck5"></label>
+            <input id="ck6" type="checkbox" checked/>
+            <label for="ck6"></label>
+            <input id="ck7" type="checkbox"/>
+            <label for="ck7"></label>
+            <input id="ck8" type="checkbox"/>
+            <label for="ck8"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section__title">Interests</div>
+      <div class="section__list">
+        <div class="section__list-item">
+          Reading grimdark fantasy, football, sustainability, and emerging tech.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
